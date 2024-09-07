@@ -71,7 +71,7 @@
       .title(v-else) {{tab.reactive.customTitle ?? tab.reactive.title}}
     .close(
       v-if="!iconOnly && Settings.state.tabRmBtn !== 'none'"
-      @mousedown.stop="onMouseDownClose"
+      @click.stop="onMouseDownClose"
       @mouseup.stop="onMouseUpClose"
       @contextmenu.stop.prevent)
       svg.close-icon: use(xlink:href="#icon_remove")
